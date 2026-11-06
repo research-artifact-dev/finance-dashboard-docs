@@ -1,0 +1,1160 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="SAP Help Portal documentation for the Finance Intelligence Dashboard — built with SAP UI5 and SAP CAP">
+      
+      
+        <meta name="author" content="SAP Developer Team">
+      
+      
+      
+        <link rel="prev" href="../odata-service-2352883/">
+      
+      
+        <link rel="next" href="../ai-agents-pipeline-641aad7/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+    
+    
+      
+        <title>UI Components - Finance Intelligence Dashboard</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ui-components" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Finance Intelligence Dashboard" class="md-header__button md-logo" aria-label="Finance Intelligence Dashboard" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Finance Intelligence Dashboard
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              UI Components
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../overview-9a752eb/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Overview
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../data-model-b3d77c9/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Data Model
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../odata-service-2352883/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  OData Service Layer
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  UI Components
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../ai-agents-pipeline-641aad7/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  AI Agents & Pipeline
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../deployment-guide-e5eb8f5/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Deployment Guide
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Finance Intelligence Dashboard" class="md-nav__button md-logo" aria-label="Finance Intelligence Dashboard" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Finance Intelligence Dashboard
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview-9a752eb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data-model-b3d77c9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Model
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odata-service-2352883/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OData Service Layer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UI Components
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UI Components
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mvc-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MVC Structure
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xml-views" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        XML Views
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xml-fragments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        XML Fragments
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dashboard-controller" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dashboard Controller
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formatter-utility" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Formatter Utility
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Design System
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai-agents-pipeline-641aad7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Agents & Pipeline
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deployment-guide-e5eb8f5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deployment Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mvc-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MVC Structure
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xml-views" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        XML Views
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xml-fragments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        XML Fragments
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dashboard-controller" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dashboard Controller
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formatter-utility" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Formatter Utility
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Design System
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<!-- loio53ad056b1a184ce6828c33ee2d86ee5a -->
+
+<h1 id="ui-components">UI Components<a class="headerlink" href="#ui-components" title="Permanent link">&para;</a></h1>
+<p>The frontend of the Finance Intelligence Dashboard is built with SAP UI5 following the Model-View-Controller (MVC) pattern. The application is structured as a standard SAP UI5 Component with XML views, reusable XML fragments, a central controller, and a formatter utility. All UI elements conform to the SAP Horizon theme and SAP Fiori design guidelines.</p>
+<p>The frontend lives in <code>app/finance-dashboard/webapp/</code> and is served directly by the SAP CAP development server at <code>http://localhost:4004</code>.</p>
+<p><a name="loio53ad056b1a184ce6828c33ee2d86ee5a__section_mvc_structure"/></p>
+<h2 id="mvc-structure">MVC Structure<a class="headerlink" href="#mvc-structure" title="Permanent link">&para;</a></h2>
+<p>SAP UI5 uses the MVC (Model-View-Controller) pattern to separate data, presentation, and business logic. In this application, the pattern maps to three distinct layers:</p>
+<ul>
+<li><strong>Models</strong> — OData V4 models configured in <code>manifest.json</code> bind directly to the FinanceService</li>
+<li><strong>Views</strong> — XML files in <code>view/</code> define the UI structure declaratively</li>
+<li><strong>Controllers</strong> — JavaScript files in <code>controller/</code> handle user interactions and data manipulation</li>
+</ul>
+<p>This separation makes it easy to update the UI layout without touching business logic, and to modify controller logic without redesigning views.</p>
+<p>For SAP Fiori presentation tier guidance, see <a href="https://help.sap.com/docs/EXTENSION_ARCHITECTURE_GUIDE/0d65087f886b45488953c28f0ad29c05/2e520f8992014a9c8038f79d8858a513.html" title="SAP Fiori presentation tier selection guide">Presentation Tier Guidance</a> <img alt="↗" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2197.svg" title=":arrow_upper_right:" />.</p>
+<p><a name="loio53ad056b1a184ce6828c33ee2d86ee5a__section_views"/></p>
+<h2 id="xml-views">XML Views<a class="headerlink" href="#xml-views" title="Permanent link">&para;</a></h2>
+<p>The application uses two XML views:</p>
+<p><strong>XML Views</strong></p>
+<table>
+<tr>
+<th valign="top">
+
+File
+
+</th>
+<th valign="top">
+
+Purpose
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+`App.view.xml`
+
+</td>
+<td valign="top">
+
+Root view — initializes the router and provides the application shell
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`Dashboard.view.xml`
+
+</td>
+<td valign="top">
+
+Main dashboard view — lays out all panels, KPI cards, pipeline, and chart
+
+</td>
+</tr>
+</table>
+
+<p><code>Dashboard.view.xml</code> is the primary view. It aggregates all XML fragments into a single dashboard layout, binding each section to a specific OData entity set via named models.</p>
+<p><a name="loio53ad056b1a184ce6828c33ee2d86ee5a__section_fragments"/></p>
+<h2 id="xml-fragments">XML Fragments<a class="headerlink" href="#xml-fragments" title="Permanent link">&para;</a></h2>
+<p>XML fragments allow you to decompose complex views into reusable, self-contained UI blocks. Each fragment in this application maps to one dashboard panel:</p>
+<p><strong>XML Fragments</strong></p>
+<table>
+<tr>
+<th valign="top">
+
+Fragment File
+
+</th>
+<th valign="top">
+
+Dashboard Panel
+
+</th>
+<th valign="top">
+
+Data Binding
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+`PipelineStage.fragment.xml`
+
+</td>
+<td valign="top">
+
+7-stage processing pipeline with status indicators
+
+</td>
+<td valign="top">
+
+`/PipelineStages`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`KPICards.fragment.xml`
+
+</td>
+<td valign="top">
+
+KPI summary cards \(invoices, tax, compliance, anomalies\)
+
+</td>
+<td valign="top">
+
+`/KPIMetrics`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`ComplianceScore.fragment.xml`
+
+</td>
+<td valign="top">
+
+Category compliance breakdown with progress bars
+
+</td>
+<td valign="top">
+
+`/ComplianceScores`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`AlertsList.fragment.xml`
+
+</td>
+<td valign="top">
+
+Severity-based risk and anomaly alerts list
+
+</td>
+<td valign="top">
+
+`/Alerts`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`AgentStatus.fragment.xml`
+
+</td>
+<td valign="top">
+
+Real-time AI agent operational status panel
+
+</td>
+<td valign="top">
+
+`/AgentStatus`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`MonthlyChart.fragment.xml`
+
+</td>
+<td valign="top">
+
+Bar chart of monthly invoice volume
+
+</td>
+<td valign="top">
+
+`/MonthlyTrends`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`InvoiceDetailDialog.fragment.xml`
+
+</td>
+<td valign="top">
+
+Detail dialog with AI verdict, risk level, and approve/reject actions
+
+</td>
+<td valign="top">
+
+Selected `Invoices` record
+
+</td>
+</tr>
+</table>
+
+<p><a name="loio53ad056b1a184ce6828c33ee2d86ee5a__section_controller"/></p>
+<h2 id="dashboard-controller">Dashboard Controller<a class="headerlink" href="#dashboard-controller" title="Permanent link">&para;</a></h2>
+<p><code>Dashboard.controller.js</code> is the single controller for the main dashboard view. It handles:</p>
+<ul>
+<li>Loading all OData entity sets on initialization</li>
+<li>Responding to invoice row selection and opening the <code>InvoiceDetailDialog</code> fragment</li>
+<li>Processing approve and reject actions from the detail dialog</li>
+<li>Refreshing KPI and alert data after user actions</li>
+</ul>
+<p><a name="loio53ad056b1a184ce6828c33ee2d86ee5a__section_formatter"/></p>
+<h2 id="formatter-utility">Formatter Utility<a class="headerlink" href="#formatter-utility" title="Permanent link">&para;</a></h2>
+<p><code>utils/formatter.js</code> provides pure data transformation functions that are called from XML view bindings. Formatters are stateless and testable in isolation. Common formatter functions in this application include:</p>
+<ul>
+<li>Converting raw <code>riskLevel</code> strings to semantic color identifiers (for example, <code>"High"</code> → <code>"Error"</code>)</li>
+<li>Formatting decimal amounts to localized currency strings</li>
+<li>Translating <code>status</code> codes to human-readable labels and icon sources</li>
+<li>Computing progress bar values from integer compliance percentages</li>
+</ul>
+<p><a name="loio53ad056b1a184ce6828c33ee2d86ee5a__section_design_system"/></p>
+<h2 id="design-system">Design System<a class="headerlink" href="#design-system" title="Permanent link">&para;</a></h2>
+<p>The application uses the SAP Horizon theme with the following design tokens:</p>
+<p><strong>Design Tokens</strong></p>
+<table>
+<tr>
+<th valign="top">
+
+Token
+
+</th>
+<th valign="top">
+
+Value
+
+</th>
+<th valign="top">
+
+Usage
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Primary blue
+
+</td>
+<td valign="top">
+
+`#0070F2`
+
+</td>
+<td valign="top">
+
+Primary actions, highlights, and active states
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Success green
+
+</td>
+<td valign="top">
+
+`#00C853`
+
+</td>
+<td valign="top">
+
+Approved invoices and passing compliance scores
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Warning orange
+
+</td>
+<td valign="top">
+
+`#FF9800`
+
+</td>
+<td valign="top">
+
+Medium-severity alerts and caution states
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Error red
+
+</td>
+<td valign="top">
+
+`#D32F2F`
+
+</td>
+<td valign="top">
+
+High-severity alerts, rejected invoices, and validation errors
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Background gray
+
+</td>
+<td valign="top">
+
+`#f5f6f7`
+
+</td>
+<td valign="top">
+
+Card backgrounds and panel fills
+
+</td>
+</tr>
+</table>
+
+<p>Typography uses the SAP 72 font family at 13–18px, with 600 font weight for titles and uppercase labels at 11–12px.</p>
+<p><strong>Related Information</strong>  </p>
+<p><a href="../overview-9a752eb/" title="Finance Intelligence Dashboard system overview and architecture">Overview</a></p>
+<p><a href="../ai-agents-pipeline-641aad7/" title="AI agent roles and 7-stage pipeline">AI Agents and Processing Pipeline</a></p>
+<p><a href="https://help.sap.com/docs/EXTENSION_ARCHITECTURE_GUIDE/0d65087f886b45488953c28f0ad29c05/2e520f8992014a9c8038f79d8858a513.html" title="SAP Fiori frontend tier selection and guidance">Presentation Tier Guidance</a> <img alt="↗" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2197.svg" title=":arrow_upper_right:" /></p>
+<p><a href="https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/b569abb158934306a65f3eb38f86ffba.html" title="Fiori Launchpad access configuration on SAP BTP">Providing Access to the SAP Fiori Application</a> <img alt="↗" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2197.svg" title=":arrow_upper_right:" /></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c21346df.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>
