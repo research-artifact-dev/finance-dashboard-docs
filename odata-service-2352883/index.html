@@ -53,6 +53,8 @@
       
     
     
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -561,6 +563,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#note" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Note:
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -753,6 +766,17 @@
     <span class="md-ellipsis">
       
         Post-Read Logging
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#note" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Note:
       
     </span>
   </a>
@@ -984,10 +1008,10 @@ Historical monthly invoice volume data for charting
 <span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">data</span><span class="p">;</span>
 <span class="p">});</span>
 </code></pre></div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
+<blockquote>
+<h3 id="note">Note:<a class="headerlink" href="#note" title="Permanent link">&para;</a></h3>
 <p>The global <code>after('READ', '*')</code> hook introduces a small overhead on every read operation. In high-throughput production environments, consider replacing it with entity-specific hooks on only the entities that require monitoring.</p>
-</div>
+</blockquote>
 <p><a name="loio2352883876c04552b4ee8a8d260dbd67__section_odata_queries"/></p>
 <h2 id="odata-query-examples">OData Query Examples<a class="headerlink" href="#odata-query-examples" title="Permanent link">&para;</a></h2>
 <p>You can use standard OData V4 query parameters to filter and sort results during development. The following examples demonstrate typical queries:</p>

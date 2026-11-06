@@ -51,6 +51,8 @@
       
     
     
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -593,6 +595,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Local Development Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#note" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Note:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -614,6 +633,23 @@
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="SAP HANA Deployment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#caution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Caution:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -682,6 +718,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Local Development Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#note" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Note:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -703,6 +756,23 @@
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="SAP HANA Deployment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#caution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Caution:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -774,10 +844,10 @@
 </li>
 </ol>
 <p>The <code>npm run watch</code> command starts the SAP CAP server in development mode. It loads the SQLite in-memory database, seeds it with CSV mock data from <code>db/data/</code>, and serves both the OData service and the SAP UI5 frontend from the same port.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
+<blockquote>
+<h3 id="note">Note:<a class="headerlink" href="#note" title="Permanent link">&para;</a></h3>
 <p>In development mode, all data is held in memory and resets on each server restart. To persist changes across restarts, configure a file-based SQLite database or switch to SAP HANA.</p>
-</div>
+</blockquote>
 <p><strong>Available Development Commands</strong></p>
 <table>
 <tr>
@@ -888,10 +958,10 @@ cf<span class="w"> </span>target<span class="w"> </span>-o<span class="w"> </spa
 <div class="highlight"><pre><span></span><code>cds<span class="w"> </span>deploy<span class="w"> </span>--to<span class="w"> </span>hana
 </code></pre></div>
 <p>This command generates the HDI (HANA Deployment Infrastructure) artifacts and pushes the schema to the connected SAP HANA instance. Ensure that the HANA connection details are configured in your <code>~/.cdsrc.json</code> or as environment variables before running this command.</p>
-<div class="admonition danger">
-<p class="admonition-title">Caution</p>
+<blockquote>
+<h3 id="caution">Caution:<a class="headerlink" href="#caution" title="Permanent link">&para;</a></h3>
 <p>Running <code>cds deploy --to hana</code> on an existing production database will apply schema migrations. Review the generated HDI artifacts before deploying to a production environment to avoid unintended data loss.</p>
-</div>
+</blockquote>
 <p><a name="loioe5eb8f58c65146fb977571db9c4079a0__section_testing"/></p>
 <h2 id="verifying-the-deployment">Verifying the Deployment<a class="headerlink" href="#verifying-the-deployment" title="Permanent link">&para;</a></h2>
 <p>After starting the server — locally or on BTP — you can verify that the OData service is running by navigating to the service document:</p>
