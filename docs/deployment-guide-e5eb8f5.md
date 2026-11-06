@@ -48,8 +48,8 @@ To run the application locally:
 
 The `npm run watch` command starts the SAP CAP server in development mode. It loads the SQLite in-memory database, seeds it with CSV mock data from `db/data/`, and serves both the OData service and the SAP UI5 frontend from the same port.
 
-!!! note
-    In development mode, all data is held in memory and resets on each server restart. To persist changes across restarts, configure a file-based SQLite database or switch to SAP HANA.
+> ### Note:  
+> In development mode, all data is held in memory and resets on each server restart. To persist changes across restarts, configure a file-based SQLite database or switch to SAP HANA.
 
 **Available Development Commands**
 
@@ -180,8 +180,8 @@ cds deploy --to hana
 
 This command generates the HDI \(HANA Deployment Infrastructure\) artifacts and pushes the schema to the connected SAP HANA instance. Ensure that the HANA connection details are configured in your `~/.cdsrc.json` or as environment variables before running this command.
 
-!!! danger "Caution"
-    Running `cds deploy --to hana` on an existing production database will apply schema migrations. Review the generated HDI artifacts before deploying to a production environment to avoid unintended data loss.
+> ### Caution:  
+> Running `cds deploy --to hana` on an existing production database will apply schema migrations. Review the generated HDI artifacts before deploying to a production environment to avoid unintended data loss.
 
 
 

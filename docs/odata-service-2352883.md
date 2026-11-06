@@ -226,8 +226,8 @@ srv.after('READ', '*', (data, req) => {
 });
 ```
 
-!!! note
-    The global `after('READ', '*')` hook introduces a small overhead on every read operation. In high-throughput production environments, consider replacing it with entity-specific hooks on only the entities that require monitoring.
+> ### Note:  
+> The global `after('READ', '*')` hook introduces a small overhead on every read operation. In high-throughput production environments, consider replacing it with entity-specific hooks on only the entities that require monitoring.
 
 
 

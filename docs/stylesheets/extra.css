@@ -1,0 +1,73 @@
+/* ============================================================
+   SAP Help Portal Note/Tip/Caution styles for MkDocs Material
+   Matches the visual style of help.sap.com callout boxes.
+   ============================================================ */
+
+/* Base blockquote — SAP Note (blue) */
+.md-typeset blockquote {
+  border-left: 4px solid #1464B4;
+  background: rgba(20, 100, 180, 0.07);
+  padding: 0.75em 1em 0.75em 1.25em;
+  margin: 1.25em 0;
+  border-radius: 0 4px 4px 0;
+}
+
+/* Note/Tip/Caution header (### Note:  etc.) */
+.md-typeset blockquote h3 {
+  font-size: 0.78em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #1464B4;
+  margin: 0 0 0.5em 0;
+  padding: 0;
+}
+
+/* Body text inside a note */
+.md-typeset blockquote p,
+.md-typeset blockquote li {
+  font-size: 0.88em;
+  margin-bottom: 0.4em;
+}
+
+/* Tip — green */
+.md-typeset blockquote:has(h3:-webkit-any(:contains("Tip"), :contains("TIP"))),
+.md-typeset blockquote:has(h3:is([id*="tip"])) {
+  border-left-color: #188918;
+  background: rgba(24, 137, 24, 0.06);
+}
+.md-typeset blockquote:has(h3:-webkit-any(:contains("Tip"))) h3 {
+  color: #188918;
+}
+
+/* Caution — red/orange */
+.md-typeset blockquote:has(h3:-webkit-any(:contains("Caution"), :contains("CAUTION"))) {
+  border-left-color: #BB0000;
+  background: rgba(187, 0, 0, 0.06);
+}
+.md-typeset blockquote:has(h3:-webkit-any(:contains("Caution"))) h3 {
+  color: #BB0000;
+}
+
+/* Remember — teal */
+.md-typeset blockquote:has(h3:-webkit-any(:contains("Remember"))) {
+  border-left-color: #0A6ED1;
+  background: rgba(10, 110, 209, 0.06);
+}
+
+/* Restriction — gray */
+.md-typeset blockquote:has(h3:-webkit-any(:contains("Restriction"))) {
+  border-left-color: #6A6D70;
+  background: rgba(106, 109, 112, 0.06);
+}
+.md-typeset blockquote:has(h3:-webkit-any(:contains("Restriction"))) h3 {
+  color: #6A6D70;
+}
+
+/* ============================================================
+   External link arrow icon — :arrow_upper_right:
+   Make it render as a subtle superscript ↗ visual
+   ============================================================ */
+.md-typeset a[href^="http"]::after {
+  content: "";
+}

@@ -147,8 +147,8 @@ graph TB
   CAP --> BTP[SAP BTP Cloud Foundry]
 ```
 
-!!! note
-    The diagram above is a Mermaid representation for reference. For SAP Help Portal publishing, replace this code block with an exported PNG image in the `images/` folder: `![Architecture diagram.](images/architecture-9a752eb.png "Finance Dashboard System Architecture")`
+> ### Note:  
+> The diagram above is a Mermaid representation for reference. For SAP Help Portal publishing, replace this code block with an exported PNG image in the `images/` folder: `![Architecture diagram.](images/architecture-9a752eb.png "Finance Dashboard System Architecture")`
 
 
 
