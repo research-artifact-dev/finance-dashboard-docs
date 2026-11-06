@@ -1,0 +1,51 @@
+site_name: Finance Intelligence Dashboard
+site_description: SAP Help Portal documentation for the Finance Intelligence Dashboard — built with SAP UI5 and SAP CAP
+site_author: SAP Developer Team
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  palette:
+    scheme: default
+    primary: blue
+    accent: light blue
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+nav:
+  - Home: index.md
+  - Overview: overview-9a752eb.md
+  - Data Model: data-model-b3d77c9.md
+  - OData Service Layer: odata-service-2352883.md
+  - UI Components: ui-components-53ad056.md
+  - AI Agents & Pipeline: ai-agents-pipeline-641aad7.md
+  - Deployment Guide: deployment-guide-e5eb8f5.md
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra_javascript:
+  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
